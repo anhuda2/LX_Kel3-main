@@ -1,9 +1,5 @@
-from flask import Flask, render_template, request
-
-from urllib.parse import quote
-
+from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__, template_folder="templates")
-
 from pymongo import MongoClient
 
 client = MongoClient(
@@ -59,10 +55,9 @@ def register():
         users_collection.insert_one({'name': name, 'email': email, 'password': password})
 
         # jika registrasi sukses maka
-        return 'Registrasi berhasil'
+        return redirect(url_for('login'))
 
     return render_template('register.html')
-
 
 
 @app.route("/reservasi")
