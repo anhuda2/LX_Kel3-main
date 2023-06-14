@@ -4,9 +4,8 @@ from urllib.parse import quote
 
 app = Flask(__name__, template_folder="templates")
 
-password = "anhuda@321"
-encoded_password = quote(password, safe="")
-mongo_url = f"mongodb+srv://anhuda2:{encoded_password}@cluster0.5w40yat.mongodb.net/"
+password = "anhuda123"
+mongo_url = f"mongodb+srv://anhuda2:{password}@cluster0.5w40yat.mongodb.net/"
 client = MongoClient(mongo_url)
 db = client["Cluster0"]
 
