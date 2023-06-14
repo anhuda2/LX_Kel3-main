@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+                "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #ffffff;
+            color: #eee;
+            user-select: none;
+        }
+
+        code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+                monospace;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nft {
+            user-select: none;
+            max-width: 300px;
+            margin: 1rem;
+            border: 1px solid #ffffff22;
+            background-color: #282c34;
+            background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+            border-radius: .7rem;
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            overflow: hidden;
+            transition: .5s all;
+        }
+
+        .nft hr {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #88888855;
+            margin-top: 0;
+        }
+
+        .nft ins {
+            text-decoration: none;
+        }
+
+        .nft .main {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            padding: 1rem;
+        }
+
+        .nft .tokenImage {
+            border-radius: .5rem;
+            max-width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .nft .description {
+            margin: .5rem 0;
+            color: #a89ec9;
+        }
+
+        .nft .tokenInfo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nft .price {
+            display: flex;
+            align-items: center;
+            color: #ee83e5;
+            font-weight: 700;
+        }
+
+        .nft .price ins {
+            margin-left: -.3rem;
+            margin-right: .5rem;
+        }
+
+        .nft .duration {
+            display: flex;
+            align-items: center;
+            color: #a89ec9;
+            margin-right: .2rem;
+        }
+
+        .nft .duration ins {
+            margin: .5rem;
+            margin-bottom: .4rem;
+        }
+
+        .nft .creator {
+            display: flex;
+            align-items: center;
+            margin-top: .2rem;
+            margin-bottom: -.3rem;
+        }
+
+        .nft .creator ins {
+            color: #a89ec9;
+            text-decoration: none;
+        }
+
+        .nft .creator .wrapper {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ffffff22;
+            padding: .3rem;
+            margin: 0;
+            margin-right: .5rem;
+            border-radius: 100%;
+            box-shadow: inset 0 0 0 4px #000000aa;
+        }
+
+        .nft .creator .wrapper img {
+            border-radius: 100%;
+            border: 1px solid #ffffff22;
+            width: 2rem;
+            height: 2rem;
+            object-fit: cover;
+            margin: 0;
+        }
+
+        .nft::before {
+            position: fixed;
+            content: "";
+            box-shadow: 0 0 100px 40px #ffffff08;
+            top: -10%;
+            left: -100%;
+            transform: rotate(-45deg);
+            height: 60rem;
+            transition: .7s all;
+        }
+
+        .nft:hover {
+            border: 1px solid #ffffff44;
+            box-shadow: 0 7px 50px 10px #000000aa;
+            transform: scale(1.015);
+            filter: brightness(1.3);
+        }
+
+        .nft:hover::before {
+            filter: brightness(.5);
+            top: -100%;
+            left: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nft">
+            <div class='main'>
+                <img class='tokenImage' src="https://pict.sindonews.net/dyn/732/pena/news/2021/02/26/173/348284/beragam-nama-jakarta-sejak-tahun-397-sampai-sekarang-txm.jpg"
+                    alt="NFT" />
+                <h2>Jakarta</h2>
+                <p class='description'>Jakarta, atau secara resmi bernama Daerah Khusus Ibukota Jakarta adalah ibu kota negara dan kota terbesar di Indonesia. Menurut sistem pembagian administratif Indonesia, Jakarta merupakan provinsi dengan status daerah khusus. Sementara menurut pengertian secara umum, Jakarta merupakan kota metropolitan.</p>
+                <div class='tokenInfo'>
+                    <div class="price">
+                        <ins>◘</ins>
+                        <p>Jakarta</p>
+                    </div>
+                    <div class="duration">
+                        <ins>◷</ins>
+                        <p>11 days left</p>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+        <div class="nft">
+            <div class='main'>
+                <img class='tokenImage' src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7YqMIRuuc-A5eEWebO3ZiNNqntQnNct6Bd9dQBizFuIflT9y0OUpP_uEHPILlvII_Y7M1On_FdBRIwTj9t0aE5wij_F3wQnU_ylm_w25Gz3TxZrDzk4KlCKHguHOiZOTK1HBXMsMdy8Qjf4NZfOfOGGKeX-xF2utqU4W1oqKtnkFaYCJbCITPRLvUTg/s16000/gedung-sate.jpg"
+                    alt="NFT" />
+                <h2>Bandung</h2>
+                <p class='description'>Kota Bandung adalah ibu kota Provinsi Jawa Barat yang sekaligus menjadi pusat pemerintahan dan perekonomian dari Provinsi Jawa Barat, Indonesia. Kota Bandung juga merupakan kota terbesar ketiga di Indonesia setelah Jakarta dan Surabaya.</p>
+                <div class='tokenInfo'>
+                    <div class="price">
+                        <ins>◘</ins>
+                        <p>Jawa Barat</p>
+                    </div>
+                    <div class="duration">
+                        <ins>◷</ins>
+                        <p>11 days left</p>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+        <div class="nft">
+            <div class='main'>
+                <img class='tokenImage' src="https://cdn-cms.pgimgs.com/areainsider/2019/07/tangerang_1541376856.jpg"
+                    alt="NFT" />
+                <h2>Tangerang</h2>
+                <p class='description'>Kota Tangerang adalah kota yang terletak di provinsi Banten, Indonesia. Kota ini terletak tepat di sebelah barat Jakarta. Suku aslinya adalah Suku Sunda. Pada tahun 2021, jumlah penduduk kota Tangerang sebanyak 1.853.462 dengan kepadatan 12.041 jiwa/km².</p>
+                <div class='tokenInfo'>
+                    <div class="price">
+                        <ins>◘</ins>
+                        <p>Banten</p>
+                    </div>
+                    <div class="duration">
+                        <ins>◷</ins>
+                        <p>11 days left</p>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+        <div class="nft">
+            <div class='main'>
+                <img class='tokenImage' src="https://lapisbogor.co.id/wp-content/uploads/2022/12/sejarah-kota-bogor-2.jpg"
+                    alt="NFT" />
+                <h2>Bogor</h2>
+                <p class='description'>Bogor adalah sebuah kota yang terletak di provinsi Jawa Barat, Indonesia. Kota ini terletak 59 km di sebelah selatan Jakarta, dan merupakan enklave Kabupaten Bogor. Pada pertengahan tahun 2022, jumlah penduduk Kota Bogor sebanyak 1.114.018 jiwa, dengan kepadatan 10.001 jiwa/km².</p>
+                <div class='tokenInfo'>
+                    <div class="price">
+                        <ins>◘</ins>
+                        <p>Jawa Barat</p>
+                    </div>
+                    <div class="duration">
+                        <ins>◷</ins>
+                        <p>11 days left</p>
+                    </div>
+                    
+                </div>
+                <hr />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
